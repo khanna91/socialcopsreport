@@ -1,0 +1,38 @@
+[ 
+	{
+        "year": 2011,
+        "truck" : 22081,
+        "cars": 14803,
+        "twowheelers": 32107,
+        "bus": 13078,
+        "pedestrian" : 10385
+    }, {
+        "year": 2012,
+        "truck" : 23081,
+        "cars": 13023,
+        "twowheelers": 34345,
+        "bus": 10578,
+        "pedestrian" : 12780
+    }, {
+        "year": 2013,
+        "truck" : 24081,
+        "cars": 14803,
+        "twowheelers": 34187,
+        "bus": 12055,
+        "pedestrian" : 12385
+    }, {
+        "year": 2014,
+        "truck" : 27081,
+        "cars": 14703,
+        "twowheelers": 34157,
+        "bus": 10075,
+        "pedestrian" : 15885
+    }, {
+        "year": 2015,
+        "truck" : 29081,
+        "cars": 16213,
+        "twowheelers": 35987,
+        "bus": 13095,
+        "pedestrian" : 11093
+    }
+]

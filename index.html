@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Social Cops</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="./css/all.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 no-padding">
+	                <div id="large-header" class="large-header">
+	                    <canvas id="bubble-canvas"></canvas>
+	                    <h1 class="main-title">SocialCops<span>A Report on Road Accidents</span></h1>
+	                </div>
+	            </div>
+            </div>
+
+            <div class="row">
+            	<div class="col-xs-12 tagline">
+            		<blockquote>
+            			<em>Road accidents kill <span>382</span> in India every day - <span>1,682</span> times more than terrorism</em>
+            		</blockquote>
+            	</div>
+            </div>
+
+            <div class="row">
+            	<section class="seperator seperator-style-triangles radar">
+					<div class="col-md-4 col-md-offset-1">
+						<p>As many as <span>139,671</span> people lost their lives on India’s roads during 2015 – <span>382</span> deaths every day.</p>
+					</div>
+					<div class="col-md-7">
+						<div id="radarChartDiv"></div>
+						<em>Total Number of Road Accident in year 2015</em>
+					</div>
+				</section>
+			</div>
+
+			<div class="row">
+				<section class="seperator multiline-chart">
+					<div id="multilineChartDiv"></div>
+					<em>Monthly Classification of Accident</em>
+				</section>
+			</div>
+
+			<div class="row">
+				<section class="seperator seperator-style-triangles seperator-style-multitriangles yellow">
+	            	<div class="tagline yellow">
+	            		<blockquote>
+	            			<em>Every accident is a notice that something is wrong with men, methods, or material — investigate — then act.</em>
+	            		</blockquote>
+	            	</div>
+				</section>
+            </div>
+
+            <div class="row">
+            	<section class="seperator" id="vehicle-chart">
+            		<div id="vehicleChartDiv"></div>
+            	</section>
+            </div>
+
+            <div class="row">
+            	<div class="col-xs-12 tagline">
+            		<blockquote>
+            			<em>Building more <span>public transport</span> could play a big role in improving India's urban <span>road safety</span>.</em>
+            		</blockquote>
+            	</div>
+            </div>
+			
+			<div class="row" id="footer">
+				<div class="col-xs-12">
+					All rights are reserved. &copy; 2016 | SocialCops
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/all.min.js"></script>
+		<script>
+			chart.radar('radarChartDiv', 'api/state-report.json');
+			chart.multiline('multilineChartDiv', 'api/monthly-report.json');
+			chart.stack('vehicleChartDiv', 'api/vehicle-report.json');
+		</script>
+	</body>
+</html>

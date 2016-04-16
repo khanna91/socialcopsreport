@@ -1,0 +1,215 @@
+html {
+  font-size: 14px;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url('../images/bg.jpg');
+  background-position: center bottom;
+  z-index: 1;
+}
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-weight: normal;
+  font-size: 8em;
+  padding-left: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: #FFD800;
+}
+.main-title span {
+  display: block;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-indent: 4px;
+  font-size: 14px;
+  padding: 0.5em 0px 2em;
+  color: #FFF;
+}
+.main-title span::before,
+.main-title span::after {
+  content: "—";
+  padding: 0px 0.5em;
+}
+section.seperator {
+  position: relative;
+  background: #2980b9;
+  color: #fff;
+  text-align: center;
+}
+section.seperator h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-weight: 400;
+}
+section.seperator p {
+  color: #000;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+section.seperator::before,
+section.seperator::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+section.seperator.seperator-style-triangles {
+  background-color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.seperator.seperator-style-triangles p {
+  text-align: right;
+  padding-top: 10rem;
+  font-size: 18px;
+}
+section.seperator.seperator-style-triangles p span {
+  color: #FFD800;
+}
+section.seperator.seperator-style-triangles em {
+  color: #000;
+  font-size: 12px;
+}
+section.seperator.seperator-style-triangles::before,
+section.seperator.seperator-style-triangles::after {
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+section.seperator.seperator-style-triangles::before {
+  top: -50px;
+  background: #FFF;
+}
+section.seperator.seperator-style-triangles::after {
+  bottom: -50px;
+  z-index: 10;
+  background: inherit;
+}
+section.seperator.seperator-style-triangles.yellow {
+  background-color: #FFD800;
+}
+section.seperator.seperator-style-triangles.yellow::before {
+  top: -50px;
+  background: #FFD800;
+}
+section.seperator.seperator-style-multitriangles::after {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -25px;
+  z-index: 10;
+  background: inherit;
+  box-shadow: -50px 50px 0 #FFD800, 50px -50px 0 #FFD800;
+}
+#radarChartDiv,
+#multilineChartDiv {
+  width: 100%;
+  height: 300px;
+  font-size: 11px;
+}
+#multilineChartDiv {
+  color: #FFF;
+}
+section.multiline-chart {
+  background: #181922;
+  padding: 60px 0 80px;
+}
+.tagline {
+  background: #181922 none repeat scroll 0% 0%;
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.tagline.yellow {
+  background: #FFD800 none repeat scroll 0% 0%;
+  color: #FFF;
+}
+.tagline blockquote {
+  max-width: 800px;
+  margin: 0px auto;
+  border-left: 0;
+}
+.tagline blockquote em {
+  font-size: 3rem !important;
+}
+.tagline blockquote em span {
+  color: #FFD800;
+}
+#vehicle-chart {
+  background: #FFF;
+  padding: 60px 0 0;
+}
+#vehicleChartDiv {
+  width: 100%;
+  height: 500px;
+  font-size: 11px;
+}
+#footer {
+  background: #000;
+  color: #FFF;
+  border-top: 2px #FFF solid;
+  font-size: 13px;
+  padding: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .main-title {
+    font-size: 4rem;
+  }
+  .main-title span {
+    font-size: 0.5rem;
+  }
+  .tagline {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+  .tagline blockquote em {
+    font-size: 1rem !important;
+  }
+  section.seperator.seperator-style-triangles p {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  section.seperator.seperator-style-triangles.radar {
+    padding-bottom: 70px;
+  }
+  section.seperator.seperator-style-triangles::after,
+  section.seperator.seperator-style-triangles.yellow::after {
+    bottom: -25px;
+    width: 50px;
+    height: 50px;
+  }
+  section.seperator.seperator-style-triangles::before,
+  section.seperator.seperator-style-triangles.yellow::before {
+    top: -25px;
+    width: 50px;
+    height: 50px;
+  }
+}

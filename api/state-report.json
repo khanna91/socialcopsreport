@@ -1,0 +1,30 @@
+[ 
+	{
+		"state": "Delhi",
+		"accident": 23430
+	}, {
+		"state": "Chennai",
+		"accident": 15190
+	}, {
+		"state": "Uttar Pradesh",
+		"accident": 16287
+	}, {
+		"state": "Karnataka",
+		"accident": 10452
+	}, {
+		"state": "Bihar",
+		"accident": 4913
+	}, {
+		"state": "Maharastra",
+		"accident": 12803
+	}, {
+		"state": "Punjab",
+		"accident": 4621
+	}, {
+		"state": "Rajasthan",
+		"accident": 10289
+	}, {
+		"state": "Andra Pradesh",
+		"accident": 7908
+	} 
+]
