@@ -38,4 +38,4 @@ where,
 	api/vehicle-report.json - url of API endpoint for state report
 
 
-## AMChart is a third party plugin which is used to render the charts, three types of charts have been used in this project, radar chart, multi-axis chart and stacked - refer here for [documentation](https://docs.amcharts.com/3/javascriptcharts)
+##### AMChart is a third party plugin which is used to render the charts, three types of charts have been used in this project, radar chart, multi-axis chart and stacked - refer here for [documentation](https://docs.amcharts.com/3/javascriptcharts)
